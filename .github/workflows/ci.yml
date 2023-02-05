@@ -1,0 +1,42 @@
+name: "NPM Publish"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Publish:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.14
+          cache: 'npm'
+
+      - name: Install npm packages
+        run: npm install
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Build Banana
+        run: npm run banana -- --build --env prod
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: xj-banana-release
+          path: ./build/
+
+      - name: Publish NPM package
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+
