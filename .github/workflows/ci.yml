@@ -1,4 +1,4 @@
-name: "NPM Publish"
+name: "CI Build & Publish"
 
 on:
   push:
@@ -7,7 +7,6 @@ on:
 
 jobs:
   CI:
-    name: CI Build & Publish
     runs-on: ubuntu-latest
 
     steps:

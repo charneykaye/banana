@@ -7,7 +7,6 @@ on:
 
 jobs:
   PR:
-    name: PR Check
     runs-on: ubuntu-latest
 
     steps:
