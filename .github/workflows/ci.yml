@@ -6,7 +6,8 @@ on:
       - main
 
 jobs:
-  Publish:
+  CI:
+    name: CI Build & Publish
     runs-on: ubuntu-latest
 
     steps:

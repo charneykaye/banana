@@ -6,8 +6,8 @@ on:
       - prod
 
 jobs:
-  UnitTests:
-    name: Unit Tests
+  PR:
+    name: PR Check
     runs-on: ubuntu-latest
 
     steps:
