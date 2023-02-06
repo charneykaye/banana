@@ -19,7 +19,6 @@ jobs:
         with:
           node-version: 18.14
           cache: 'npm'
-          registry-url: 'https://npm.pkg.github.com'
 
       - name: Install npm packages
         run: npm install
