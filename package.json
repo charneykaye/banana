@@ -1,7 +1,7 @@
 {
-  "name": "@xjmusic/banana",
+  "name": "@charneykaye/banana",
   "version": "4.0.6",
-  "repository": "git@github.com:xjmusic/banana",
+  "repository": "git@github.com:charneykaye/banana",
   "description": "made by artists in a new algorithmic medium",
   "bin": {
     "banana": "./lib/index.js"
