@@ -31,7 +31,7 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: xj-banana-release
+          name: banana
           path: ./build/
 
       - name: Publish NPM package
