@@ -1,4 +1,4 @@
-name: "CI Build & Publish"
+name: "Continuous Integration"
 
 on:
   push:

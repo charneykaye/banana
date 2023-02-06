@@ -1,4 +1,4 @@
-name: "CI Build & Publish"
+name: "Publish Tag to Package"
 
 on:
   push:
